@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class ControlStatementExercise {
 	private static final Scanner scanner = new Scanner(System.in);
-
+	
+	//Hacker rank if - else
 	public static void main(String args[]) {
 		int N = scanner.nextInt();
 		if (N % 2 != 0) {

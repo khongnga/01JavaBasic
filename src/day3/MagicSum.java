@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MagicSum {
 		
+	//C.Method - 3
 		public static void isMagicSum() {
 			int sum = 0;
 			Scanner scanner =new Scanner(System.in);

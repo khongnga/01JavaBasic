@@ -7,6 +7,7 @@ public class LoopTest {
 		LoopTest.doExe1();
 	}
 	
+	//B. Loop - 1
 	public static void doExe1()
 	{
 		int a[] = new int [5];
@@ -20,6 +21,7 @@ public class LoopTest {
 		}
 	}
 	
+	//B.Loop - 6
 	public static void doExe6() {
 		int sum = 0;
 		for(int i=1;i<=100;i++) {
@@ -28,6 +30,7 @@ public class LoopTest {
 		System.out.println("Sum of the square is: " + sum);
 	}
 	
+	//B.Loop - 7
 	public static void doExe7() {
 		int n;
 		float sum = 0;
@@ -43,13 +46,45 @@ public class LoopTest {
         System.out.println("Tổng là: " + sum);
 	}
 	
-	public static void doExe10() {
-		String numberStr = "Hello World";
-		for (int i = 0;i < numberStr.length(); i++) {
-			if(numberStr.charAt(i)=='r') {
-				System.out.println("Vị trí của chữ r là: " + i);
+	//B.Loop - 8
+	public static void doExe8() {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print("# ");
 			}
+			System.out.println();
 		}
+	}
+	
+	//B.Loop - 9
+	public static void doExe9() {
+		for (int i = 0; i < 7; i++) {
+			for (int j = 0; j < 7; j++) {
+				if (i % 2 != 0) {
+					System.out.print("# ");
+				} else {
+					System.out.print(" #");
+				}
+			}
+			System.out.println();
+		}
+	}
+	
+	//B.Loop - 10
+	public static void doExe10() {
+		String str = "Hello World";
+		int index = -1;
+//		for (int i = 0;i < str.length(); i++) {
+//			if(str.charAt(i)=='r') {
+//				System.out.println("Vị trí của chữ r là: " + i);
+//			}
+//		}
+		
+		do {
+			index++;
+			System.out.println("chi so " + index);
+		}
+		while(str.charAt(index)=='r' && index < str.length());
 		
 	}
 }

@@ -3,6 +3,7 @@ package day3;
 import org.openqa.selenium.By;
 
 public class Switch {
+	//A.Switch - 1
 	public static void printDayOfWeek(int n) {
 		switch(n) {
 		case 2: 
@@ -33,6 +34,7 @@ public class Switch {
 		
 	}
 	
+	//A.Switch - 2
 	public static By getLocator(String locatorType, String locatorValue) {
 		By result = null;
 		switch (locatorType) {
